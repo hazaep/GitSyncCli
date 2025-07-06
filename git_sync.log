@@ -7,3 +7,8 @@
 [2025-07-06 11:47:08] (hazaep) [master] commit: se añadio el comando feature para crear una ramanueva y subirla pr opcionall
 [2025-07-06 11:47:25] (hazaep) [master] push
 [2025-07-06 11:54:37] 🔧 Inicio flujo dev en rama 'master' para 'GitSyncCli'
+[2025-07-06 11:56:07] (hazaep) [master] commit: se añadio comando issue
+[2025-07-06 11:56:22] (hazaep) [master] push
+[2025-07-06 11:56:32] 🔧 Inicio flujo dev en rama 'master' para 'GitSyncCli'
+[2025-07-06 11:56:57] ⚠️ Rebase detenido por conflicto. Esperando resolución manual.
+[2025-07-06 12:00:17] (hazaep) [master] gh auth status
