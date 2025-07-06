@@ -80,3 +80,13 @@ git push origin "$branch"
 log_action "📤 Push a origin/$branch"
 
 echo -e "\n✅ ${GREEN}Flujo de desarrollo completado correctamente.${RESET}"
+
+# Preguntar si se desea crear PR al terminar dev
+read -p "🔁 ¿Crear PR para esta rama? (y/n): " crear_pr
+if [[ "$crear_pr" == "y" || "$crear_pr" == "Y" ]]; then
+  read -p "📝 Título de la PR: " pr_title
+  read -p "📋 Descripción: " pr_desc
+  gh pr create --title "$pr_title" --body "$pr_desc" --base main --head "$branch"
+  log_action "🔁 PR creada desde rama '$branch'"
+  echo -e "${GREEN}✅ Pull Request creada.${RESET}"
+fi
